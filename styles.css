@@ -115,6 +115,40 @@ nav a {
     border-radius: 5px;
 }
 
+/* Estilos para Ejemplos de Cartas Tecnológicas */
+#ejemplos-cartas-tecnologicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Diseño responsive */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.carta-tecnologica {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carta-tecnologica img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para Ejemplos de Cartas de Eventos */
+#ejemplos-cartas-eventos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Diseño responsive */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.carta-evento {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
 /* Pie de Página */
 footer {
     text-align: center;
