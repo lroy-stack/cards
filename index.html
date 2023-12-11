@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tales of Cryptonia</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tales of Cryptonia - Juego de Cartas</h1>
+    </header>
+
+    <main>
+       
+        <!-- Narrativa y Reglas del Juego -->
+        <section id="narrativa">
+            <h2>Narrativa del Juego</h2>
+        
+            <!-- Narrativa -->
+            <div class="narrativa">
+                <h3>Narrativa</h3>
+                <p>
+                    Tales of Cryptonia se desarrolla en un mundo futuro donde la economía global ha adoptado la tecnología blockchain como su columna vertebral. En este mundo, las transacciones, contratos y decisiones financieras son impulsadas por criptomonedas y contratos inteligentes. Sin embargo, poderosos conglomerados y entidades buscan controlar la cadena de bloques para sus propios intereses. Los jugadores asumen el papel de líderes rebeldes que buscan cambiar el juego de la economía utilizando cartas blockchain y habilidades especiales para desafiar el statu quo.
+                </p>
+            </div>
+        </section>
+        
+
+        <section id="reglas">
+            <h2>Reglas del Juego</h2>
+        
+            <!-- Reglas Básicas -->
+            <div class="reglas">
+                <h3>Reglas Básicas</h3>
+        <ul>
+            <li><strong>Inicio del Juego:</strong>
+                <ul>
+                    <li>Cada jugador comienza con una mano de 5 cartas.</li>
+                    <li>Se elige al azar un jugador inicial.</li>
+                </ul>
+            </li>
+            <li><strong>Objetivo:</strong>
+                <ul>
+                    <li>El objetivo es cambiar el juego de la economía a través de la blockchain. Esto se logra acumulando Puntos de Cambio, que se obtienen al realizar acciones estratégicas.</li>
+                </ul>
+            </li>
+            <li><strong>Recursos:</strong>
+                <ul>
+                    <li>Criptoenergía: Utilizada para jugar cartas. Se recarga al comienzo de cada turno.</li>
+                    <li>Puntos de Cambio: Acumulados para ganar el juego.</li>
+                </ul>
+            </li>
+            <li><strong>Tipos de Cartas:</strong>
+                <ul>
+                    <li>Personajes: Representan líderes y figuras clave en la historia.</li>
+                    <li>Tecnologías: Potencian y mejoran las habilidades de los personajes.</li>
+                    <li>Eventos: Afectan el curso del juego de manera inmediata.</li>
+                </ul>
+            </li>
+            <li><strong>Dinámica de Turno:</strong>
+                <ul>
+                    <li><strong>Inicio del Turno:</strong>
+                        <ul>
+                            <li>Se recargan los puntos de criptoenergía.</li>
+                            <li>Se roban 2 cartas.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fase de Acción:</strong>
+                        <ul>
+                            <li>Los jugadores pueden jugar cartas de su mano gastando criptoenergía.</li>
+                            <li>Pueden atacar al oponente directamente o defenderse con personajes y tecnologías.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fase de Resolución:</strong>
+                        <ul>
+                            <li>Se resuelven los enfrentamientos y efectos de las cartas.</li>
+                            <li>Se acumulan Puntos de Cambio según las acciones exitosas.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fin del Turno:</strong>
+                        <ul>
+                            <li>Se descartan cartas en exceso si el jugador tiene más de 7 cartas en mano.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Habilidades y Atributos:</strong>
+                <ul>
+                    <li><strong>Fuerza:</strong>
+                        <ul>
+                            <li>Indica la capacidad de ataque del personaje.</li>
+                            <li>Se suma al daño infligido durante los enfrentamientos.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ataque Especial:</strong>
+                        <ul>
+                            <li>Habilidad única de ciertos personajes y tecnologías.</li>
+                            <li>Puede tener efectos diversos, como robar cartas, reducir la criptoenergía del oponente, etc.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Rarezas y Habilidades Especiales:</strong>
+                <ul>
+                    <li><strong>Común (500 cartas):</strong>
+                        <ul>
+                            <li>Habilidades básicas de ataque y defensa.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Poco Común (300 cartas):</strong>
+                        <ul>
+                            <li>Habilidades de manipulación de criptoenergía y tácticas avanzadas.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Raro (150 cartas):</strong>
+                        <ul>
+                            <li>Habilidades estratégicas y mejoras significativas.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Épico (30 cartas):</strong>
+                        <ul>
+                            <li>Habilidades únicas y eventos que cambian el curso del juego.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Legendario (15 cartas):</strong>
+                        <ul>
+                            <li>Poderosas habilidades que pueden alterar la economía de manera drástica.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mítico (5 cartas):</strong>
+                        <ul>
+                            <li>Habilidades legendarias y eventos épicos que redefinen el juego.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+        <!-- Desglose de la Baraja -->
+        <section id="baraja">
+            <h2>Desglose de la Baraja</h2>
+            <ul>
+                <li>Común: 500 cartas</li>
+                <li>Poco Común: 300 cartas</li>
+                <li>Raro: 150 cartas</li>
+                <li>Épico: 30 cartas</li>
+                <li>Legendario: 15 cartas</li>
+                <li>Mítico: 5 cartas</li>
+            </ul>
+        </section>
+
+        <!-- Ejemplos de Cartas -->
+        <section id="ejemplos-cartas">
+            <h2>Ejemplos de Cartas</h2>
+            <!-- Ejemplo de Carta Común -->
+            <div class="carta comun">
+                <img src="Lantern_Fox.png" alt="Novato en Blockchain">
+                <h3>Novato en Blockchain</h3>
+                <p>Un entusiasta que está dando sus primeros pasos en el mundo de la blockchain.</p>
+                <p>Rareza: Común</p>
+                <div class="atributos">
+                    <p>Nivel de Fuerza: 80</p>
+                    <p>Ataque: 20</p>
+                    <p>Defensa: 10</p>
+                    <p>Criptoenergía: 50</p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades:</h4>
+                    <ul>
+                        <li>Ráfaga de Minado: Incrementa los recursos obtenidos por la minería de criptomonedas durante un turno.</li>
+                        <li>Contrato Básico: Crea un contrato inteligente simple para obtener pequeñas recompensas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ejemplo de Carta Legendaria -->
+            <div class="carta legendaria">
+                <img src="Whiplash.png" alt="Dios de la Cadena de Bloques">
+                <h3>Dios de la Cadena de Bloques</h3>
+                <p>Soberano del Cosmos Crypto, una deidad en el mundo de las criptomonedas.</p>
+                <p>Rareza: Legendario</p>
+                <div class="atributos">
+                    <p>Nivel de Fuerza: 1000</p>
+                    <p>Ataque: 500</p>
+                    <p>Defensa: 800</p>
+                    <p>Criptoenergía: 450</p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades:</h4>
+                    <ul>
+                        <li>Invocación Cósmica: Desata un poder cósmico que afecta a todos los jugadores.</li>
+                        <li>Contrato Divino: Crea contratos inteligentes a nivel divino para obtener recompensas masivas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carta poco-comun">
+                <img src="Tusk_Boar.png" alt="Constructor de DApps">
+                <h3>Constructor de DApps</h3>
+                <p>Desarrolla aplicaciones descentralizadas básicas para obtener beneficios.</p>
+                <p>Rareza: Poco Común</p>
+                <div class="atributos">
+                    <p>Nivel de Fuerza: 150</p>
+                    <p>Ataque: 40</p>
+                    <p>Defensa: 30</p>
+                    <p>Criptoenergía: 80</p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades:</h4>
+                    <ul>
+                        <li>Desarrollo Eficiente: Agiliza el proceso de desarrollo de contratos inteligentes de manera eficiente.</li>
+                        <li>Aplicación Descentralizada: Despliega una aplicación que otorga beneficios adicionales durante un turno.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carta rara">
+                <img src="Storm_Kage.png" alt="Estratega Macro Crypto">
+                <h3>Estratega Macro Crypto</h3>
+                <p>Desarrolla estrategias a gran escala en el mundo de las criptomonedas.</p>
+                <p>Rareza: Rara</p>
+                <div class="atributos">
+                    <p>Nivel de Fuerza: 300</p>
+                    <p>Ataque: 120</p>
+                    <p>Defensa: 80</p>
+                    <p>Criptoenergía: 250</p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades:</h4>
+                    <ul>
+                        <li>Visión Global: Conoce los movimientos del mercado de criptomonedas antes que otros jugadores.</li>
+                        <li>Manejo de Fondos: Mejora la gestión de inversiones para obtener mayores rendimientos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carta epica">
+                <img src="Widowmaker.png" alt="Avatar de la DeFi">
+                <h3>Avatar de la DeFi</h3>
+                <p>Encarna el espíritu de las finanzas descentralizadas para obtener beneficios épicos.</p>
+                <p>Rareza: Épica</p>
+                <div class="atributos">
+                    <p>Nivel de Fuerza: 600</p>
+                    <p>Ataque: 300</p>
+                    <p>Defensa: 200</p>
+                    <p>Criptoenergía: 300</p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades:</h4>
+                    <ul>
+                        <li>DeFi Dominante: Aumenta las recompensas al participar en proyectos DeFi.</li>
+                        <li>Protector de Activos: Protege los activos del jugador de eventos negativos.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Ejemplo de Carta Mítica -->
+<div class="carta mitica">
+    <img src="Jade_Monk.png" alt="Criatura Mítica de la Blockchain">
+    <h3>Criatura Mítica de la Blockchain</h3>
+    <p>Una entidad legendaria que personifica la esencia misma de la cadena de bloques.</p>
+    <p>Rareza: Mítica</p>
+    <div class="atributos">
+        <p>Nivel de Fuerza: 1500</p>
+        <p>Ataque: 700</p>
+        <p>Defensa: 1200</p>
+        <p>Criptoenergía: 1500</p>
+    </div>
+    <div class="habilidades">
+        <h4>Habilidades:</h4>
+        <ul>
+            <li>Transformación Blockchain: Altera la realidad del juego de manera fundamental.</li>
+            <li>Anomalía Cuántica: Desencadena eventos impredecibles en cada turno.</li>
+        </ul>
+    </div>
+</div>
+
+            <!-- Otros Ejemplos de Cartas... -->
+        </section>
+        <!-- Escenarios de Batalla -->
+<section id="escenarios-batalla">
+    <h2>Escenarios de Batalla</h2>
+
+    <!-- Escenario 1: Crypto Plaza -->
+    <div class="escenario">
+        <h3>1. Crypto Plaza</h3>
+        <p><strong>Descripción:</strong> Un bullicioso distrito financiero construido en la cadena de bloques. Rascacielos de criptoempresas rodean la plaza central donde se libran batallas para controlar la influencia en la economía digital.</p>
+        <p><strong>Características:</strong> Tecnologías avanzadas como torres de datos y nodos blockchain que afectan las tácticas.</p>
+    </div>
+
+    <!-- Escenario 2: Ether Bosque -->
+    <div class="escenario">
+        <h3>2. Ether Bosque</h3>
+        <p><strong>Descripción:</strong> Un entorno natural dentro de la blockchain de Ethereum. Los jugadores luchan entre árboles de contratos inteligentes y arroyos de criptomonedas, buscando el control de valiosos recursos digitales.</p>
+        <p><strong>Características:</strong> Criaturas digitales emergen para unirse a la batalla, y eventos inesperados ocurren en función de contratos inteligentes.</p>
+    </div>
+
+    <!-- Escenario 3: BitTorrent Desierto -->
+    <div class="escenario">
+        <h3>3. BitTorrent Desierto</h3>
+        <p><strong>Descripción:</strong> Un vasto desierto donde los vientos digitales transportan información valiosa. Equipos se enfrentan por el control de la red de intercambio de archivos digitales.</p>
+        <p><strong>Características:</strong> Tormentas de datos pueden cambiar la visibilidad y el acceso a las habilidades.</p>
+    </div>
+
+    <!-- Escenario 4: Satoshi Montañas -->
+    <div class="escenario">
+        <h3>4. Satoshi Montañas</h3>
+        <p><strong>Descripción:</strong> Impresionantes montañas que albergan la cima más alta, donde se encuentra el núcleo de la blockchain. Los jugadores escalan para dominar la economía desde las alturas.</p>
+        <p><strong>Características:</strong> La altitud afecta las estrategias, y la climatología blockchain puede cambiar las condiciones de batalla.</p>
+    </div>
+
+    <!-- Escenario 5: Quantum Ciudad -->
+    <div class="escenario">
+        <h3>5. Quantum Ciudad</h3>
+        <p><strong>Descripción:</strong> Una ciudad construida en las bases de la computación cuántica. Los jugadores luchan en calles y plazas cuánticas, donde las reglas convencionales no siempre se aplican.</p>
+        <p><strong>Características:</strong> Cambios cuánticos pueden alterar la realidad del juego, haciendo que las cartas se comporten de manera impredecible.</p>
+    </div>
+
+    <!-- Escenario 6: DeFi Islas -->
+    <div class="escenario">
+        <h3>6. DeFi Islas</h3>
+        <p><strong>Descripción:</strong> Un archipiélago de islas flotantes en el océano blockchain, donde los jugadores compiten por controlar los protocolos DeFi más valiosos. Las batallas se libran entre plataformas descentralizadas y pools de liquidez.</p>
+        <p><strong>Características:</strong> Las olas de liquidez pueden cambiar el equilibrio de poder y afectar la economía digital.</p>
+    </div>
+
+    <!-- Escenario 7: Consensus Selva -->
+    <div class="escenario">
+        <h3>7. Consensus Selva</h3>
+        <p><strong>Descripción:</strong> Una selva densa donde los jugadores exploran ecosistemas descentralizados. Los enfrentamientos ocurren en nodos y contratos inteligentes escondidos entre la vegetación digital.</p>
+        <p><strong>Características:</strong> La fauna blockchain puede interferir en las batallas, y la selva oculta secretos que afectan la estrategia.</p>
+    </div>
+
+    <!-- Escenario 8: NFT Desfiladero -->
+    <div class="escenario">
+        <h3>8. NFT Desfiladero</h3>
+        <p><strong>Descripción:</strong> Un cañón rocoso donde las cartas NFT cobran vida. Jugadores se enfrentan en duelos épicos para controlar la ruta hacia la rareza digital más valiosa.</p>
+        <p><strong>Características:</strong> Artefactos NFT pueden cambiar las reglas del juego y las cartas pueden evolucionar durante las batallas.</p>
+    </div>
+
+    <!-- Escenario 9: Smart Contract Desierto -->
+    <div class="escenario">
+        <h3>9. Smart Contract Desierto</h3>
+        <p><strong>Descripción:</strong> Un vasto desierto de contratos inteligentes abandonados. Jugadores se aventuran en la arena digital en busca de tesoros olvidados y secretos de la blockchain.</p>
+        <p><strong>Características:</strong> Eventos de contratos inteligentes pueden dar giros inesperados a las batallas, y los jugadores deben adaptarse a las condiciones cambiantes.</p>
+    </div>
+
+    <!-- Escenario 10: DAO Cielo -->
+    <div class="escenario">
+        <h3>10. DAO Cielo</h3>
+        <p><strong>Descripción:</strong> Un cielo lleno de nodos DAO que controlan decisiones descentralizadas. Los jugadores luchan en altitudes elevadas para ganar influencia sobre la toma de decisiones blockchain.</p>
+        <p><strong>Características:</strong> La participación comunitaria puede cambiar el rumbo de las batallas, y las decisiones DAO impactan en las estrategias a largo plazo.</p>
+    </div>
+</section>
+<!-- Sección de Roles -->
+<section id="roles">
+    <h2>Posibles Roles en Tales of Cryptonia</h2>
+
+    <!-- Grid de Roles -->
+    <div class="roles-grid">
+
+        <!-- Rol Común -->
+        <div class="rol comun">
+            <h3>1. Novato en Blockchain</h3>
+            <p><strong>Descripción:</strong> Un entusiasta que está dando sus primeros pasos en el mundo de la blockchain.</p>
+            <p><strong>Habilidades:</strong> Ráfaga de Minado, Contrato Básico.</p>
+        </div>
+
+        <!-- Rol Poco Común -->
+        <div class="rol poco-comun">
+            <h3>2. Constructor de DApps</h3>
+            <p><strong>Descripción:</strong> Desarrolla aplicaciones descentralizadas básicas para obtener beneficios.</p>
+            <p><strong>Habilidades:</strong> Desarrollo Eficiente, Aplicación Descentralizada.</p>
+        </div>
+
+        <!-- Rol Raro -->
+        <div class="rol rara">
+            <h3>3. Estratega Macro Crypto</h3>
+            <p><strong>Descripción:</strong> Desarrolla estrategias a gran escala en el mundo de las criptomonedas.</p>
+            <p><strong>Habilidades:</strong> Visión Global, Manejo de Fondos.</p>
+        </div>
+<!-- Rol Mítico -->
+<div class="rol mitica">
+    <h3>20. Oráculo de la Criptósfera</h3>
+    <p><strong>Descripción:</strong> Un ser misterioso que posee conocimientos profundos de la criptósfera y puede prever eventos futuros.</p>
+    <p><strong>Habilidades:</strong> Predicciones Criptográficas, Manipulación Temporal.</p>
+</div>
+
+        <!-- Rol Épico -->
+        <div class="rol epica">
+            <h3>4. Avatar de la DeFi</h3>
+            <p><strong>Descripción:</strong> Encarna el espíritu de las finanzas descentralizadas para obtener beneficios épicos.</p>
+            <p><strong>Habilidades:</strong> DeFi Dominante, Protector de Activos.</p>
+        </div>
+
+        <!-- Rol Legendario -->
+        <div class="rol legendaria">
+            <h3>5. Dios de la Cadena de Bloques</h3>
+            <p><strong>Descripción:</strong> Soberano del Cosmos Crypto, una deidad en el mundo de las criptomonedas.</p>
+            <p><strong>Habilidades:</strong> Invocación Cósmica, Contrato Divino.</p>
+        </div>
+        <!-- Rol Legendario -->
+<div class="rol legendaria">
+    <h3>31. Oráculo de Contratos</h3>
+    <p><strong>Descripción:</strong> Poseedor de la sabiduría de los contratos, predice movimientos en la cadena de bloques.</p>
+    <p><strong>Habilidades:</strong> Predicción Infalible, Revelación de Contratos.</p>
+</div>
+
+<!-- Rol Común -->
+<div class="rol comun">
+    <h3>32. Inversionista Inicial</h3>
+    <p><strong>Descripción:</strong> Participa en proyectos emergentes para cosechar beneficios a largo plazo.</p>
+    <p><strong>Habilidades:</strong> Inversión Temprana, Diversificación de Cartera.</p>
+</div>
+
+<!-- Rol Poco Común -->
+<div class="rol poco-comun">
+    <h3>33. Ingeniero de Blockchain</h3>
+    <p><strong>Descripción:</strong> Diseña y mejora la arquitectura de las cadenas de bloques.</p>
+    <p><strong>Habilidades:</strong> Optimización de Bloques, Seguridad Criptográfica.</p>
+</div>
+   <!-- Rol Épico -->
+<div class="rol epica">
+    <h3>34. Alquimista Digital</h3>
+    <p><strong>Descripción:</strong> Transforma datos en valiosos recursos digitales mediante alquimia blockchain.</p>
+    <p><strong>Habilidades:</strong> Transmutación Digital, Creación de Activos.</p>
+</div>
+
+<!-- Rol Legendario -->
+<div class="rol legendaria">
+    <h3>35. Titán de Transacciones</h3>
+    <p><strong>Descripción:</strong> Controla flujos masivos de transacciones para influir en la economía global.</p>
+    <p><strong>Habilidades:</strong> Transacciones a Gran Escala, Manipulación de Mercado.</p>
+</div>     
+ <!-- Agrega estos 20 roles a tu sección de roles -->
+
+<!-- Rol Común -->
+<div class="rol comun">
+    <h3>6. Aprendiz de Blockchain</h3>
+    <p><strong>Descripción:</strong> Inicia su camino en la blockchain, buscando conocimiento y experiencia.</p>
+    <p><strong>Habilidades:</strong> Exploración Básica, Adquisición de Conocimiento.</p>
+</div>
+
+<!-- Rol Poco Común -->
+<div class="rol poco-comun">
+    <h3>7. Defensor de Contratos</h3>
+    <p><strong>Descripción:</strong> Protege la integridad de los contratos inteligentes y sus ejecuciones.</p>
+    <p><strong>Habilidades:</strong> Escudo Criptográfico, Vigilante de Contratos.</p>
+</div>
+
+<!-- Rol Raro -->
+<div class="rol rara">
+    <h3>8. Maestro del Nodo</h3>
+    <p><strong>Descripción:</strong> Controla nodos estratégicos en la cadena de bloques para obtener ventajas.</p>
+    <p><strong>Habilidades:</strong> Manipulación de Nodos, Seguridad de Red.</p>
+</div>
+
+<!-- Rol Épico -->
+<div class="rol epica">
+    <h3>9. CriptoArquitecto</h3>
+    <p><strong>Descripción:</strong> Diseña arquitecturas blockchain complejas para proyectos innovadores.</p>
+    <p><strong>Habilidades:</strong> Diseño Avanzado, Despliegue Estratégico.</p>
+</div>
+
+<!-- Rol Legendario -->
+<div class="rol legendaria">
+    <h3>10. Oráculo de Contratos</h3>
+    <p><strong>Descripción:</strong> Poseedor de la sabiduría de los contratos, predice movimientos en la cadena de bloques.</p>
+    <p><strong>Habilidades:</strong> Predicción Infalible, Revelación de Contratos.</p>
+</div>
+
+<!-- Rol Legendario -->
+<div class="rol legendaria">
+    <h3>11. Inversionista Inicial</h3>
+    <p><strong>Descripción:</strong> Participa en proyectos emergentes para cosechar beneficios a largo plazo.</p>
+    <p><strong>Habilidades:</strong> Inversión Temprana, Diversificación de Cartera.</p>
+</div>
+
+<!-- Rol Poco Común -->
+<div class="rol poco-comun">
+    <h3>12. Ingeniero de Blockchain</h3>
+    <p><strong>Descripción:</strong> Diseña y mejora la arquitectura de las cadenas de bloques.</p>
+    <p><strong>Habilidades:</strong> Optimización de Bloques, Seguridad Criptográfica.</p>
+</div>
+
+<!-- Rol Épico -->
+<div class="rol epica">
+    <h3>13. Cazador de Bugs</h3>
+    <p><strong>Descripción:</strong> Encuentra y soluciona vulnerabilidades en contratos y protocolos.</p>
+    <p><strong>Habilidades:</strong> Análisis de Seguridad, Eliminación de Bugs.</p>
+</div>
+
+<!-- Rol Raro -->
+<div class="rol rara">
+    <h3>14. Alquimista Digital</h3>
+    <p><strong>Descripción:</strong> Transforma datos en valiosos recursos digitales mediante alquimia blockchain.</p>
+    <p><strong>Habilidades:</strong> Transmutación Digital, Creación de Activos.</p>
+</div>
+
+<!-- Rol Legendario -->
+<div class="rol legendaria">
+    <h3>15. Titán de Transacciones</h3>
+    <p><strong>Descripción:</strong> Controla flujos masivos de transacciones para influir en la economía global.</p>
+    <p><strong>Habilidades:</strong> Transacciones a Gran Escala, Manipulación de Mercado.</p>
+</div>
+
+<!-- Rol Épico -->
+<div class="rol epica">
+    <h3>16. Vigilante de la DeFi</h3>
+    <p><strong>Descripción:</strong> Protege la integridad de los protocolos DeFi y lucha contra la centralización.</p>
+    <p><strong>Habilidades:</strong> Defensa Descentralizada, Contraataque Financiero.</p>
+</div>
+
+<!-- Rol Poco Común -->
+<div class="rol poco-comun">
+    <h3>17. Explorador de Tokens</h3>
+    <p><strong>Descripción:</strong> Descubre nuevos tokens y oportunidades en el vasto mundo de las criptomonedas.</p>
+    <p><strong>Habilidades:</strong> Búsqueda de Tokens, Evaluación de Proyectos.</p>
+</div>
+
+<!-- Rol Raro -->
+<div class="rol rara">
+    <h3>18. Nómada Blockchain</h3>
+    <p><strong>Descripción:</strong> Viaja a través de diversas cadenas de bloques, adaptándose a diferentes entornos.</p>
+    <p><strong>Habilidades:</strong> Travesía Interblockchain, Conexión Multired.</p>
+</div>
+
+<!-- Rol Épico -->
+<div class="rol epica">
+    <h3>19. Mago de Contratos</h3>
+    <p><strong>Descripción:</strong> Domina el arte de crear contratos inteligentes con poderes místicos.</p>
+    <p><strong>Habilidades:</strong> Conjuros Contratos, Magia Blockchain.</p>
+</div>
+<!-- Agrega estos 10 roles a tu sección de roles -->
+
+<!-- Rol Raro -->
+<div class="rol rara">
+    <h3>21. Guardian de Tokens</h3>
+    <p><strong>Descripción:</strong> Protege la seguridad y autenticidad de tokens en diversas plataformas.</p>
+    <p><strong>Habilidades:</strong> Verificación de Tokens, Rescate Criptográfico.</p>
+</div>
+
+<!-- Rol Común -->
+<div class="rol comun">
+    <h3>22. Explorador de Bloques</h3>
+    <p><strong>Descripción:</strong> Navega por la cadena de bloques descubriendo bloques ocultos y secretos.</p>
+    <p><strong>Habilidades:</strong> Reconocimiento de Bloques, Descifrado Rápido.</p>
+</div>
+
+<!-- Rol Poco Común -->
+<div class="rol poco-comun">
+    <h3>23. Arbitro Digital</h3>
+    <p><strong>Descripción:</strong> Resuelve disputas y conflictos mediante contratos inteligentes y decisiones justas.</p>
+    <p><strong>Habilidades:</strong> Resolución de Conflictos, Sentencia Criptográfica.</p>
+</div>
+
+<!-- Rol Épico -->
+<div class="rol epica">
+    <h3>24. Cazador de NFT</h3>
+    <p><strong>Descripción:</strong> Busca y colecciona NFTs únicos con habilidades especiales.</p>
+    <p><strong>Habilidades:</strong> Rastreo de NFT, Coleccionista de Rarezas.</p>
+</div>
+
+<!-- Rol Legendario -->
+<div class="rol legendaria">
+    <h3>25. Constructor de DAO</h3>
+    <p><strong>Descripción:</strong> Diseña y gestiona organizaciones autónomas descentralizadas para cambiar el juego.</p>
+    <p><strong>Habilidades:</strong> Creación de DAOs, Votación Estratégica.</p>
+</div>
+
+<!-- Rol Común -->
+<div class="rol comun">
+    <h3>26. Mensajero Blockchain</h3>
+    <p><strong>Descripción:</strong> Transmite mensajes seguros y cifrados a través de la cadena de bloques.</p>
+    <p><strong>Habilidades:</strong> Mensajería Segura, Entrega Rápida.</p>
+</div>
+
+<!-- Rol Raro -->
+<div class="rol rara">
+    <h3>27. Ingeniero de Tokens</h3>
+    <p><strong>Descripción:</strong> Diseña y crea tokens personalizados con propósitos específicos.</p>
+    <p><strong>Habilidades:</strong> Creación de Tokens, Personalización Criptográfica.</p>
+</div>
+
+<!-- Rol Épico -->
+<div class="rol epica">
+    <h3>28. Guardian del Consenso</h3>
+    <p><strong>Descripción:</strong> Mantiene la estabilidad y consenso en redes blockchain complejas.</p>
+    <p><strong>Habilidades:</strong> Mantenimiento de Consenso, Resolución de Problemas de Red.</p>
+</div>
+
+<!-- Rol Poco Común -->
+<div class="rol poco-comun">
+    <h3>29. Explorador de Contratos</h3>
+    <p><strong>Descripción:</strong> Descubre contratos inteligentes ocultos y revela sus secretos.</p>
+    <p><strong>Habilidades:</strong> Investigación de Contratos, Exposición de Código.</p>
+</div>
+
+<!-- Rol Legendario -->
+<div class="rol legendaria">
+    <h3>30. Creador de Universos</h3>
+    <p><strong>Descripción:</strong> Tiene el poder de crear y modificar blockchains enteras, dando forma a nuevos mundos digitales.</p>
+    <p><strong>Habilidades:</strong> Creación de Blockchain, Manipulación Universal.</p>
+</div>
+
+       <!-- Agrega 15 roles más siguiendo la estructura de los ejemplos anteriores -->
+        
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tales of Cryptonia</p>
+    </footer>
+
+</body>
+</html>
